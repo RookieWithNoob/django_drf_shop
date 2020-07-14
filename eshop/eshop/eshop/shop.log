@@ -1,0 +1,438 @@
+WARNING:django.request:Not Found: /
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Unauthorized: /computer/user_info/
+WARNING:django.request:Bad Request: /api-token-auth/
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/1/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 258, in patch
+    return self.partial_update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 98, in get_object
+    obj =UserProfile.objects.get(user=user)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/1/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 258, in patch
+    return self.partial_update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 98, in get_object
+    obj =UserProfile.objects.get(user=user)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/1/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 258, in patch
+    return self.partial_update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 98, in get_object
+    obj =UserProfile.objects.get(user=user)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/1/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 258, in patch
+    return self.partial_update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 98, in get_object
+    obj =UserProfile.objects.get(user=user)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/1/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 258, in patch
+    return self.partial_update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 98, in get_object
+    obj =UserProfile.objects.get(user=user)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/1/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 258, in patch
+    return self.partial_update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 98, in get_object
+    obj =UserProfile.objects.get(user=user)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/user_profile_ru/1/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 258, in patch
+    return self.partial_update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 98, in get_object
+    obj =UserProfile.objects.get(user=user)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+computerapp.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+ERROR:django.request:Internal Server Error: /computer/order_create/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 170, in perform_create
+    serializer.save(user=user,price=product.price,address=user.profile_of.delivery_address,status='0',)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 414, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile_of.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/delivery_address_lc/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 119, in perform_create
+    profile=user.profile_of
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 414, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile_of.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/delivery_address_lc/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 119, in perform_create
+    profile=user.profile_of
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 414, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile_of.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/delivery_address_lc/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 119, in perform_create
+    profile=user.profile_of
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 414, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile_of.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/delivery_address_lc/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 119, in perform_create
+    profile=user.profile_of
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 414, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile_of.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/delivery_address_lc/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 119, in perform_create
+    profile=user.profile_of
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 414, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile_of.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/delivery_address_lc/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/generics.py", line 242, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/python/桌面/drf_shop/drf_shop/eshop/eshop/eshop/computerapp/views.py", line 119, in perform_create
+    profile=user.profile_of
+  File "/home/python/.virtualenvs/my_blog/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 414, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile_of.RelatedObjectDoesNotExist: User has no profile_of.
